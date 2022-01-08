@@ -7,7 +7,7 @@ class BaseHandler(ABC):
     The default chaining behavior can be implemented inside a base handler class.
     It also declares a method for executing a request.
     """
-    _next_handler: "BaseHandler" = None
+    _next_handler: Optional["BaseHandler"] = None
 
     def set_next(self, handler: "BaseHandler") -> "BaseHandler":
         self._next_handler = handler
