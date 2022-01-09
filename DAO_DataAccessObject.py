@@ -4,7 +4,7 @@ from typing import List
 
 class Student:
 
-    def __init__(self, name: str, rollNo: int) -> "Student":
+    def __init__(self, name: str, rollNo: int) -> None:
         self._name = name
         self._rollNo = rollNo
 
