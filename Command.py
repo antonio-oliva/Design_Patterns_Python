@@ -16,9 +16,8 @@ class Command(ABC):
     def undo(self):
         self._light.state = self._backup
 
-    @staticmethod
     @abstractmethod
-    def execute() -> None:
+    def execute(self) -> None:
         pass
 
 
